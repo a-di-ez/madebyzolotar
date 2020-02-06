@@ -1,8 +1,7 @@
 rm -rf .deploy
 mkdir .deploy
-cp public/index.html .deploy/404.html
 cp CNAME .deploy/
-cp -r public/. .deploy/
+cp -r docs/.vuepress/dist/. .deploy/
 
 cd .deploy
 
@@ -14,3 +13,4 @@ git push -f git@github.com:a-di-ez/madebyzolotar.git master:gh-pages
 cd ..
 
 rm -rf .deploy
+rm -rf docs/.vuepress/dist

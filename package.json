@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuetify": "^2.2.8"
+  },
+  "dependencies": {
+    "vue-twentytwenty": "^0.6.2"
+  }
+}
