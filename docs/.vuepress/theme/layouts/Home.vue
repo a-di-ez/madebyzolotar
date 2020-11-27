@@ -70,19 +70,18 @@
     <!-- text page end-->
 
     <v-container>
-      <section id="gallery" class="gallery">
-        <Photos/>
+      <Photos/>
 
-        <div class="text-center mt-8">
-          <v-btn
-            depressed
-            style="border-bottom: 1px solid rgba(0,0,0,.47) !important; border-radius: 0;"
-            color="white"
-          >
-            <a href="/gallery" style="text-decoration: none; color: inherit;">Show more...</a>
-          </v-btn>
-        </div>
-      </section>
+      <div class="text-center mt-9">
+        <v-btn
+          depressed
+          style="border-bottom: 1px solid rgba(0,0,0,.47) !important; border-radius: 0;"
+          color="white"
+          @click="nextPage()"
+        >
+          <a href="/gallery">Show more...</a>
+        </v-btn>
+      </div>
     </v-container>
 
     <Content/>

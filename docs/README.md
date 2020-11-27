@@ -1,2 +1,3 @@
-# Rita
-### Vadim
+---
+home: true
+---

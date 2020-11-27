@@ -1,5 +1,5 @@
 <template>
-  <section id="gallery" class="gallery">
+  <div>
     <v-row wrap class="mb-6">
       <v-col
         lg="8"
@@ -21,36 +21,20 @@
         />
       </v-col>
     </v-row>
-
-    <div class="text-center mt-9">
-      <v-btn
-        depressed
-        style="border-bottom: 1px solid rgba(0,0,0,.47) !important; border-radius: 0;"
-        color="white"
-        @click="nextPage()"
-      >
-        Show more...
-      </v-btn>
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
 import TwentyTwenty from 'vue-twentytwenty'
-import isMobile from '@theme/mixins/isMobile'
 
 export default {
   name: 'HomePhotos',
   components: {
     TwentyTwenty
   },
-  mixins: [
-    isMobile
-  ],
   data () {
     return {
-      page: 1,
-      defList: [
+      list: [
         {
           before: '/img/portfolio-1.jpg',
           after: '/img/portfolio-1.jpg',
@@ -76,19 +60,6 @@ export default {
           after: '/img/portfolio-1.jpg',
         },
       ]
-    }
-  },
-  computed: {
-    pageLimit () {
-      return this.mx_isMobile ? 3 : 6
-    },
-    list () {
-      return this.defList.slice(0, this.page * this.pageLimit)
-    }
-  },
-  methods: {
-    nextPage () {
-      this.page += 1
     }
   }
 }

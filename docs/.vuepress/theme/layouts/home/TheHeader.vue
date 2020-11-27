@@ -9,8 +9,7 @@
               md="4"
               class="pl-3"
             >
-              <a href="#intro" class="navbar-brand hidden-lg-and-down">MADE BY ZOLOTAR</a>
-              <a href="#intro" class="navbar-brand hidden-lg-and-up">Made by Zolotar</a>
+              <a href="#intro" class="navbar-brand">Made by Zolotar</a>
             </v-col>
             <v-col
               v-show="mx_isMobile"
@@ -86,12 +85,12 @@ export default {
           id: 'video'
         },
         {
-          name: 'Gallery',
-          id: 'gallery'
-        },
-        {
           name: 'Text',
           id: 'text'
+        },
+        {
+          name: 'Gallery',
+          id: 'gallery'
         },
         {
           name: 'Contact',
@@ -144,127 +143,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-.header-wrap {
-  min-height 43px
-}
-.header {
-  width 100%
-  background #fff
-  z-index 1003
-
-  &.fixed {
-    position fixed
-    top 0
-  }
-}
-
-a {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.navbar {
-  position: relative
-  font-family: "Cardo", "Times New Roman", Times, serif;
-  font-style: italic;
-  min-height: 40px;
-  height 43px
-  margin-bottom: 0;
-  border-bottom: 1px solid transparent;
-
-  i {
-    outline none
-  }
-}
-
-@media (min-width 1100px) {
-  .nav {
-    display: flex
-    align-items center
-  }
-  .navbar-nav {
-    display flex
-    justify-content flex-end
-    padding-right 35px !important
-
-    a {
-      padding 8px 15px
-    }
-  }
-}
-
-@media (max-width 1100px) {
-  .navbar-brand {
-    padding-left 5px
-  }
-  .navbar-nav {
-    padding 5px 0 !important
-    top 43px
-    position absolute
-    width 100%
-    z-index 11
-    background-color white
-    border-bottom 1px solid #e6e6e6
-    box-shadow inset 0 1px 0 rgba(255, 255, 255, .1)
-
-    div {
-      padding 8px 15px
-    }
-  }
-}
-
-.navbar-nav a {
-  line-height 22px
-}
-
-.navbar {
-  background-color: #ffffff;
-  border-bottom-color: #e6e6e6;
-}
-
-.navbar-brand {
-  color black !important
-  text-decoration none !important
-  font-size 24px
-  line-height 45px
-}
-
-.navbar-brand:hover,
-.navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
-}
-
-.navbar-nav a {
-  color: #777777;
-  text-decoration none !important
-  border-bottom: solid 1px transparent;
-}
-
-.navbar-nav a:hover,
-.navbar-nav a:focus {
-  color: #333333;
-  background-color: transparent;
-}
-
-.navbar-nav > .active > a,
-.navbar-nav > .active > a:hover,
-.navbar-nav > .active > a:focus {
-  color: #000000;
-  background-color: transparent;
-  -webkit-transition: all 2s ease-out;
-  -moz-transition: all 2s ease-out;
-  transition: all 2s ease-out;
-}
-
-@media (min-width: 767px) {
-  .navbar-nav > .active > a,
-  .navbar-nav > .active > a:hover,
-  .navbar-nav > .active > a:focus {
-    border-bottom: solid 1px #666;
-  }
-}
-</style>

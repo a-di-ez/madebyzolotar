@@ -18,6 +18,12 @@ export default {
     DefaultGlobalLayout: GlobalLayout,
     TheHeader,
     TheFooter
+  },
+  beforeMount() {
+    let recaptchaScript = document.createElement('noscript')
+    recaptchaScript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTK9BJH"\n' +
+      'height="0" width="0" style="display:none;visibility:hidden"></iframe>'
+    document.body.appendChild(recaptchaScript)
   }
 }
 </script>

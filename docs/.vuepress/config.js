@@ -19,34 +19,19 @@ module.exports = {
       'meta',
       {
         name: 'google-site-verification',
-        content: 'Fp4EJFmQvw3CR_HtasQvIKtIQMyO6tq_JumPkn4HHMU'
+        content: 'B937gk8kpgdkVLrEdSOuAnoFbEeOZTRFGtkoZWUCvXk'
       }
+    ],
+    [
+      'script',
+      {},
+      `
+       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KTK9BJH');
+       `
     ]
-  ],
-  "navigation": [
-    {
-      "text": "Works",
-      "link": "/",
-      "position": "left",
-      "external": false
-    },
-    {
-      "text": "Instagram",
-      "link": "https://www.instagram.com/its.nwa",
-      "position": "left",
-      "external": true
-    },
-    {
-      "text": "Say hi!",
-      "link": "mailto:sayhi@mydomain.com",
-      "position": "right",
-      "external": true
-    },
-    {
-      "text": "Journal",
-      "link": "/journal/",
-      "position": "right",
-      "external": false
-    }
   ]
 }

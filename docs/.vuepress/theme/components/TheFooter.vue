@@ -5,15 +5,21 @@
     class="section-inverse"
     v-intersect="onIntersect"
   >
-    <v-container>
+    <v-container class="pa-0 px-sm-3">
       <v-row class="copyright">
-        <v-col cols="12" md="6">
+        <v-col cols="4" md="6">
           <h2>
-            <a href="#intro" class="brand">MADE BY ZOLOTAR</a>
+            <a href="#intro" class="brand hidden-md-and-down">MADE BY ZOLOTAR</a>
+            <a href="#intro" class="brand hidden-lg-and-up">
+              M<span style="font-size: 22px">by</span>Z
+            </a>
           </h2>
-          <p>&copy; {{ new Date().getFullYear() }} made by Zolotar</p>
+          <p class="brand">
+            &copy; {{ new Date().getFullYear() }}
+            <span class="hidden-md-and-down">made by Zolotar</span>
+          </p>
         </v-col>
-        <v-col cols="12" md="6">
+        <v-col cols="8" md="6">
           <div style="height: 54px;">
             <v-fade-transition>
               <div
@@ -87,6 +93,7 @@ export default {
 
 <style lang="stylus" scoped>
 .brand {
+  text-transform none
   font-family "Cardo", "Times New Roman", Times, serif
   font-style italic
   text-decoration none !important
@@ -113,8 +120,6 @@ export default {
 
 <style lang="stylus">
 .copyright {
-  margin-top: 40px;
-  margin-bottom: 40px;
   color: #eeeeee;
   font-style: italic;
 }
@@ -127,12 +132,6 @@ export default {
 @media (max-width: 991px) {
   .copyright p.credit {
     text-align: center !important;
-  }
-}
-@media (min-width: 1200px) {
-  .copyright {
-    margin-top: 60px;
-    margin-bottom: 40px;
   }
 }
 @media (max-width: 991px) {
