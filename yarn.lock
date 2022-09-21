@@ -7,7 +7,7 @@ vue-twentytwenty@^0.6.2:
   resolved "https://registry.yarnpkg.com/vue-twentytwenty/-/vue-twentytwenty-0.6.2.tgz#f4dcb953760600fbb95ccb63a587fa7c2989967c"
   integrity sha512-JKwxw/p8e4wab0xPbHhj3np2ltNUh9YAaiJYlJCRWEpBig3BzgJwozLJnm5Y/BPUuy46R61o6tr0mNv66CZHQQ==
 
-vuetify@^2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.2.8.tgz#9e9105503d38e66c0fad27aba08de5e65ff6ba99"
-  integrity sha512-qeN+X/6L1Xi3Mmog9PMDUKYjC2ZOk3trl7/vDMuP0gcH1QReKb9tqpLjAyP8niOgnvZcUQw4jSc7e4Esju8Seg==
+vuetify@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.6.10.tgz#b86cd7a97bf8cd3828a72c349795b5b3c539ebc2"
+  integrity sha512-fgUeRDDCwYkwu6WGEEKGe7IdfzOsXJCZGrqkn1pcS2ycuoDL8mR2/dejH5iFNnBY6MnsT365PAGn0J+9otjfQg==
